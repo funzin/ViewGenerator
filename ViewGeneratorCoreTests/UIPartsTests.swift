@@ -8,6 +8,7 @@
 
 import XCTest
 
+@testable import ViewGeneratorCore
 class UIPartsTests: XCTestCase {
 
     var variableNameArray: [String]!

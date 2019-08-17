@@ -8,6 +8,7 @@
 
 import Foundation
 import XcodeKit
+import ViewGeneratorCore
 
 class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     private enum Const {

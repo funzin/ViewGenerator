@@ -6,7 +6,7 @@
 //  Copyright © 2019 funzin. All rights reserved.
 //
 
-enum UIParts: String, CaseIterable {
+public enum UIParts: String, CaseIterable {
 
     case `switch`
     case activityIndicatorView

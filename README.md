@@ -44,7 +44,7 @@ ViewGenerator generates view code from variable name automatically when you crea
 
 ## Usage
 1. Input variable name <br>
-  **⚠Important⚠ : variable name must be included class name as suffix.** (e.g. `hogeView`, `hogeLabel`, etc.) <br>
+  **⚠Important⚠ : variable name must be included class name without `UI` as suffix.** (e.g. `hogeView`, `hogeLabel`, etc.) <br>
   Please check [Support View List](https://github.com/funzin/ViewGenerator#support-view-list) bellow
 2. Select variable name
 3. `Editor`→`ViewGenerator`→`Generate View Code`

@@ -8,6 +8,7 @@
 
 import XCTest
 
+@testable import ViewGeneratorCore
 class AccessModifierTests: XCTestCase {
 
 
