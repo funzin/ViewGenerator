@@ -12,7 +12,7 @@ before_install:
 before_script:
   - set -o pipefail
 script:
-  - xcodebuild test | xcpretty -c
+  - xcodebuild test -workspace ViewGeneratorApp.xcworkspace -scheme ViewGeneratorApp-Debug -configuration Debug -destination 'platform=macOS' | xcpretty -c
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 notifications:
