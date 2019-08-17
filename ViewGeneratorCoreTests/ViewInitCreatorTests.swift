@@ -52,8 +52,6 @@ class ViewInitCreatorTests: XCTestCase {
         }
     }
 
-
-
     func testCreatetWhenHaveIndent() {
         let startIndent = 2
         let variableName = "hogeView"

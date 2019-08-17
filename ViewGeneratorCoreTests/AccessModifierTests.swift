@@ -11,7 +11,6 @@ import XCTest
 @testable import ViewGeneratorCore
 class AccessModifierTests: XCTestCase {
 
-
     func testBegginingOfVariable() {
         let accessModifierTextArray = ["private", "fileprivate", "internal"]
         let begginingOfVariableArray = ["private ", "fileprivate ", ""]
