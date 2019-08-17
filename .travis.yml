@@ -1,7 +1,7 @@
 language: objective-c
 osx_image: xcode10.3
 xcode_workspace: ViewGeneratorApp.xcworkspace
-xcode_scheme: ViewGeneratorApp-Debug
+xcode_scheme: ViewGeneratorCore
 xcode_destination: platform=macOS
 before_install:
   - gem install xcpretty
@@ -12,7 +12,7 @@ before_install:
 before_script:
   - set -o pipefail
 script:
-  - xcodebuild test -workspace ViewGeneratorApp.xcworkspace -scheme ViewGeneratorApp-Debug -configuration Debug -destination 'platform=macOS' | xcpretty -c
+  - xcodebuild test -workspace ViewGeneratorApp.xcworkspace -scheme ViewGeneratorCore -configuration Debug -destination 'platform=macOS' | xcpretty -c
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 notifications:
