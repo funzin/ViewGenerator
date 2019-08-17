@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		310B823722F8746E00141017 /* AccessModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B823622F8746E00141017 /* AccessModifier.swift */; };
-		310B823922F874FC00141017 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B823822F874FC00141017 /* UserDefaults+Extension.swift */; };
-		310B823A22F8801D00141017 /* AccessModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B823622F8746E00141017 /* AccessModifier.swift */; };
 		3122906422F6BE830054CA7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122906322F6BE830054CA7B /* AppDelegate.swift */; };
 		3122906622F6BE830054CA7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122906522F6BE830054CA7B /* ViewController.swift */; };
 		3122906822F6BE840054CA7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3122906722F6BE840054CA7B /* Assets.xcassets */; };
@@ -18,16 +15,17 @@
 		3122907D22F6BEA60054CA7B /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122907C22F6BEA60054CA7B /* SourceEditorExtension.swift */; };
 		3122907F22F6BEA60054CA7B /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122907E22F6BEA60054CA7B /* SourceEditorCommand.swift */; };
 		3122908422F6BEA60054CA7B /* ViewGenerator.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3122907722F6BEA60054CA7B /* ViewGenerator.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		3122908A22F6BEB50054CA7B /* UIParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122908922F6BEB50054CA7B /* UIParts.swift */; };
-		3122ABCE22F6CE6C00BC0792 /* UIPartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122ABCD22F6CE6C00BC0792 /* UIPartsTests.swift */; };
-		3123DE0B22FFC3400048347F /* AccessModifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3123DE0A22FFC3400048347F /* AccessModifierTests.swift */; };
-		3123DE0C22FFC5490048347F /* ViewInitCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C229322FFC1280030A633 /* ViewInitCreator.swift */; };
-		31AF340922FFD73B0069801D /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B823822F874FC00141017 /* UserDefaults+Extension.swift */; };
-		31AF340A22FFD9B00069801D /* AccessModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B823622F8746E00141017 /* AccessModifier.swift */; };
-		31AF340B22FFD9B50069801D /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B823822F874FC00141017 /* UserDefaults+Extension.swift */; };
-		31AF340E22FFD9F60069801D /* UIParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122908922F6BEB50054CA7B /* UIParts.swift */; };
-		31AF340F22FFD9F90069801D /* ViewInitCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C229322FFC1280030A633 /* ViewInitCreator.swift */; };
-		31C90DCC22FFC7FB0019D0C8 /* ViewInitCreatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C90DCB22FFC7FB0019D0C8 /* ViewInitCreatorTests.swift */; };
+		316FC53E2307B108003E1DD3 /* ViewGeneratorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316FC5352307B107003E1DD3 /* ViewGeneratorCore.framework */; };
+		316FC5472307B108003E1DD3 /* ViewGeneratorCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 316FC5372307B107003E1DD3 /* ViewGeneratorCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		316FC54A2307B108003E1DD3 /* ViewGeneratorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316FC5352307B107003E1DD3 /* ViewGeneratorCore.framework */; };
+		316FC54B2307B108003E1DD3 /* ViewGeneratorCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 316FC5352307B107003E1DD3 /* ViewGeneratorCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		316FC5532307B115003E1DD3 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B823822F874FC00141017 /* UserDefaults+Extension.swift */; };
+		316FC5542307B118003E1DD3 /* AccessModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B823622F8746E00141017 /* AccessModifier.swift */; };
+		316FC5552307B11C003E1DD3 /* UIParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122908922F6BEB50054CA7B /* UIParts.swift */; };
+		316FC5562307B11E003E1DD3 /* ViewInitCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C229322FFC1280030A633 /* ViewInitCreator.swift */; };
+		316FC5582307B13E003E1DD3 /* UIPartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122ABCD22F6CE6C00BC0792 /* UIPartsTests.swift */; };
+		316FC5592307B13E003E1DD3 /* ViewInitCreatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C90DCB22FFC7FB0019D0C8 /* ViewInitCreatorTests.swift */; };
+		316FC55A2307B13E003E1DD3 /* AccessModifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3123DE0A22FFC3400048347F /* AccessModifierTests.swift */; };
 		8D25217D5F83C062027DC26F /* Pods_ViewGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD022E7ED72F8458D18C5D3 /* Pods_ViewGenerator.framework */; };
 		E4EB90217B2F4CBC0BACE979 /* Pods_ViewGeneratorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB768C0B5AC8AA7B1B97C2E /* Pods_ViewGeneratorApp.framework */; };
 /* End PBXBuildFile section */
@@ -40,12 +38,26 @@
 			remoteGlobalIDString = 3122907622F6BEA60054CA7B;
 			remoteInfo = ViewGenerator;
 		};
-		3122ABC822F6CE4700BC0792 /* PBXContainerItemProxy */ = {
+		316FC53F2307B108003E1DD3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3122905822F6BE830054CA7B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3122905F22F6BE830054CA7B;
-			remoteInfo = ViewGeneratorApp;
+			remoteGlobalIDString = 316FC5342307B107003E1DD3;
+			remoteInfo = ViewGeneratorCore;
+		};
+		316FC5482307B108003E1DD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3122905822F6BE830054CA7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 316FC5342307B107003E1DD3;
+			remoteInfo = ViewGeneratorCore;
+		};
+		319AC55D2307B7870024CCEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3122905822F6BE830054CA7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 316FC5342307B107003E1DD3;
+			remoteInfo = ViewGeneratorCore;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -59,6 +71,17 @@
 				3122908422F6BEA60054CA7B /* ViewGenerator.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		316FC54C2307B108003E1DD3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				316FC54B2307B108003E1DD3 /* ViewGeneratorCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -82,10 +105,13 @@
 		3122908022F6BEA60054CA7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3122908122F6BEA60054CA7B /* ViewGenerator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ViewGenerator.entitlements; sourceTree = "<group>"; };
 		3122908922F6BEB50054CA7B /* UIParts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIParts.swift; sourceTree = "<group>"; };
-		3122ABC322F6CE4700BC0792 /* ViewGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3122ABC722F6CE4700BC0792 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3122ABCD22F6CE6C00BC0792 /* UIPartsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPartsTests.swift; sourceTree = "<group>"; };
 		3123DE0A22FFC3400048347F /* AccessModifierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessModifierTests.swift; sourceTree = "<group>"; };
+		316FC5352307B107003E1DD3 /* ViewGeneratorCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewGeneratorCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		316FC5372307B107003E1DD3 /* ViewGeneratorCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewGeneratorCore.h; sourceTree = "<group>"; };
+		316FC5382307B107003E1DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		316FC53D2307B107003E1DD3 /* ViewGeneratorCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewGeneratorCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		316FC5462307B108003E1DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31C90DCB22FFC7FB0019D0C8 /* ViewInitCreatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInitCreatorTests.swift; sourceTree = "<group>"; };
 		3BD022E7ED72F8458D18C5D3 /* Pods_ViewGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABD586E2EE2C5BDE4D2D9E1 /* Pods-ViewGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewGenerator.debug.xcconfig"; path = "Target Support Files/Pods-ViewGenerator/Pods-ViewGenerator.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +125,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				316FC54A2307B108003E1DD3 /* ViewGeneratorCore.framework in Frameworks */,
 				E4EB90217B2F4CBC0BACE979 /* Pods_ViewGeneratorApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,10 +139,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3122ABC022F6CE4700BC0792 /* Frameworks */ = {
+		316FC5322307B107003E1DD3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		316FC53A2307B107003E1DD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				316FC53E2307B108003E1DD3 /* ViewGeneratorCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +173,8 @@
 			children = (
 				3122906222F6BE830054CA7B /* ViewGeneratorApp */,
 				3122907B22F6BEA60054CA7B /* ViewGenerator */,
-				3122ABC422F6CE4700BC0792 /* ViewGeneratorTests */,
+				316FC5362307B107003E1DD3 /* ViewGeneratorCore */,
+				316FC5432307B108003E1DD3 /* ViewGeneratorCoreTests */,
 				3122907822F6BEA60054CA7B /* Frameworks */,
 				3122906122F6BE830054CA7B /* Products */,
 				2D5DECF7BE26CE16476F86C2 /* Pods */,
@@ -150,7 +186,8 @@
 			children = (
 				3122906022F6BE830054CA7B /* ViewGeneratorForXcode.app */,
 				3122907722F6BEA60054CA7B /* ViewGenerator.appex */,
-				3122ABC322F6CE4700BC0792 /* ViewGeneratorTests.xctest */,
+				316FC5352307B107003E1DD3 /* ViewGeneratorCore.framework */,
+				316FC53D2307B107003E1DD3 /* ViewGeneratorCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,8 +223,6 @@
 		3122908B22F6BF480054CA7B /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				3122908922F6BEB50054CA7B /* UIParts.swift */,
-				310C229322FFC1280030A633 /* ViewInitCreator.swift */,
 				3122907C22F6BEA60054CA7B /* SourceEditorExtension.swift */,
 				3122907E22F6BEA60054CA7B /* SourceEditorCommand.swift */,
 			);
@@ -208,9 +243,7 @@
 			children = (
 				3122906922F6BE840054CA7B /* Main.storyboard */,
 				3122906322F6BE830054CA7B /* AppDelegate.swift */,
-				310B823622F8746E00141017 /* AccessModifier.swift */,
 				3122906522F6BE830054CA7B /* ViewController.swift */,
-				310B823822F874FC00141017 /* UserDefaults+Extension.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -225,18 +258,50 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		3122ABC422F6CE4700BC0792 /* ViewGeneratorTests */ = {
+		316FC5362307B107003E1DD3 /* ViewGeneratorCore */ = {
 			isa = PBXGroup;
 			children = (
-				3122ABC722F6CE4700BC0792 /* Info.plist */,
+				316FC5572307B12D003E1DD3 /* Source */,
+				316FC5372307B107003E1DD3 /* ViewGeneratorCore.h */,
+				316FC5382307B107003E1DD3 /* Info.plist */,
+			);
+			path = ViewGeneratorCore;
+			sourceTree = "<group>";
+		};
+		316FC5432307B108003E1DD3 /* ViewGeneratorCoreTests */ = {
+			isa = PBXGroup;
+			children = (
 				3122ABCD22F6CE6C00BC0792 /* UIPartsTests.swift */,
 				31C90DCB22FFC7FB0019D0C8 /* ViewInitCreatorTests.swift */,
 				3123DE0A22FFC3400048347F /* AccessModifierTests.swift */,
+				316FC5462307B108003E1DD3 /* Info.plist */,
 			);
-			path = ViewGeneratorTests;
+			path = ViewGeneratorCoreTests;
+			sourceTree = "<group>";
+		};
+		316FC5572307B12D003E1DD3 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				310C229322FFC1280030A633 /* ViewInitCreator.swift */,
+				3122908922F6BEB50054CA7B /* UIParts.swift */,
+				310B823622F8746E00141017 /* AccessModifier.swift */,
+				310B823822F874FC00141017 /* UserDefaults+Extension.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		316FC5302307B107003E1DD3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				316FC5472307B108003E1DD3 /* ViewGeneratorCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		3122905F22F6BE830054CA7B /* ViewGeneratorApp */ = {
@@ -249,11 +314,13 @@
 				3122905E22F6BE830054CA7B /* Resources */,
 				3122908822F6BEA60054CA7B /* Embed App Extensions */,
 				31B47A9722F6CB1100F41921 /* Run SwiftLint */,
+				316FC54C2307B108003E1DD3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				3122908322F6BEA60054CA7B /* PBXTargetDependency */,
+				316FC5492307B108003E1DD3 /* PBXTargetDependency */,
 			);
 			name = ViewGeneratorApp;
 			productName = ViewGeneratorApp;
@@ -273,28 +340,47 @@
 			buildRules = (
 			);
 			dependencies = (
+				319AC55E2307B7870024CCEA /* PBXTargetDependency */,
 			);
 			name = ViewGenerator;
 			productName = ViewGenerator;
 			productReference = 3122907722F6BEA60054CA7B /* ViewGenerator.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
-		3122ABC222F6CE4700BC0792 /* ViewGeneratorTests */ = {
+		316FC5342307B107003E1DD3 /* ViewGeneratorCore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3122ABCA22F6CE4700BC0792 /* Build configuration list for PBXNativeTarget "ViewGeneratorTests" */;
+			buildConfigurationList = 316FC5512307B108003E1DD3 /* Build configuration list for PBXNativeTarget "ViewGeneratorCore" */;
 			buildPhases = (
-				3122ABBF22F6CE4700BC0792 /* Sources */,
-				3122ABC022F6CE4700BC0792 /* Frameworks */,
-				3122ABC122F6CE4700BC0792 /* Resources */,
+				316FC5302307B107003E1DD3 /* Headers */,
+				316FC5312307B107003E1DD3 /* Sources */,
+				316FC5322307B107003E1DD3 /* Frameworks */,
+				316FC5332307B107003E1DD3 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3122ABC922F6CE4700BC0792 /* PBXTargetDependency */,
 			);
-			name = ViewGeneratorTests;
-			productName = ViewGeneratorAppTests;
-			productReference = 3122ABC322F6CE4700BC0792 /* ViewGeneratorTests.xctest */;
+			name = ViewGeneratorCore;
+			productName = ViewGeneratorCore;
+			productReference = 316FC5352307B107003E1DD3 /* ViewGeneratorCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		316FC53C2307B107003E1DD3 /* ViewGeneratorCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 316FC5522307B108003E1DD3 /* Build configuration list for PBXNativeTarget "ViewGeneratorCoreTests" */;
+			buildPhases = (
+				316FC5392307B107003E1DD3 /* Sources */,
+				316FC53A2307B107003E1DD3 /* Frameworks */,
+				316FC53B2307B107003E1DD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				316FC5402307B108003E1DD3 /* PBXTargetDependency */,
+			);
+			name = ViewGeneratorCoreTests;
+			productName = ViewGeneratorCoreTests;
+			productReference = 316FC53D2307B107003E1DD3 /* ViewGeneratorCoreTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -313,9 +399,11 @@
 					3122907622F6BEA60054CA7B = {
 						CreatedOnToolsVersion = 11.0;
 					};
-					3122ABC222F6CE4700BC0792 = {
+					316FC5342307B107003E1DD3 = {
 						CreatedOnToolsVersion = 11.0;
-						TestTargetID = 3122905F22F6BE830054CA7B;
+					};
+					316FC53C2307B107003E1DD3 = {
+						CreatedOnToolsVersion = 11.0;
 					};
 				};
 			};
@@ -334,7 +422,8 @@
 			targets = (
 				3122905F22F6BE830054CA7B /* ViewGeneratorApp */,
 				3122907622F6BEA60054CA7B /* ViewGenerator */,
-				3122ABC222F6CE4700BC0792 /* ViewGeneratorTests */,
+				316FC5342307B107003E1DD3 /* ViewGeneratorCore */,
+				316FC53C2307B107003E1DD3 /* ViewGeneratorCoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -356,7 +445,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3122ABC122F6CE4700BC0792 /* Resources */ = {
+		316FC5332307B107003E1DD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		316FC53B2307B107003E1DD3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -453,9 +549,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310B823722F8746E00141017 /* AccessModifier.swift in Sources */,
 				3122906622F6BE830054CA7B /* ViewController.swift in Sources */,
-				310B823922F874FC00141017 /* UserDefaults+Extension.swift in Sources */,
 				3122906422F6BE830054CA7B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,26 +558,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310B823A22F8801D00141017 /* AccessModifier.swift in Sources */,
 				3122907D22F6BEA60054CA7B /* SourceEditorExtension.swift in Sources */,
-				3122908A22F6BEB50054CA7B /* UIParts.swift in Sources */,
-				3123DE0C22FFC5490048347F /* ViewInitCreator.swift in Sources */,
-				31AF340922FFD73B0069801D /* UserDefaults+Extension.swift in Sources */,
 				3122907F22F6BEA60054CA7B /* SourceEditorCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3122ABBF22F6CE4700BC0792 /* Sources */ = {
+		316FC5312307B107003E1DD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31AF340A22FFD9B00069801D /* AccessModifier.swift in Sources */,
-				3123DE0B22FFC3400048347F /* AccessModifierTests.swift in Sources */,
-				3122ABCE22F6CE6C00BC0792 /* UIPartsTests.swift in Sources */,
-				31AF340B22FFD9B50069801D /* UserDefaults+Extension.swift in Sources */,
-				31AF340E22FFD9F60069801D /* UIParts.swift in Sources */,
-				31C90DCC22FFC7FB0019D0C8 /* ViewInitCreatorTests.swift in Sources */,
-				31AF340F22FFD9F90069801D /* ViewInitCreator.swift in Sources */,
+				316FC5542307B118003E1DD3 /* AccessModifier.swift in Sources */,
+				316FC5552307B11C003E1DD3 /* UIParts.swift in Sources */,
+				316FC5532307B115003E1DD3 /* UserDefaults+Extension.swift in Sources */,
+				316FC5562307B11E003E1DD3 /* ViewInitCreator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		316FC5392307B107003E1DD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				316FC55A2307B13E003E1DD3 /* AccessModifierTests.swift in Sources */,
+				316FC5582307B13E003E1DD3 /* UIPartsTests.swift in Sources */,
+				316FC5592307B13E003E1DD3 /* ViewInitCreatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,10 +592,20 @@
 			target = 3122907622F6BEA60054CA7B /* ViewGenerator */;
 			targetProxy = 3122908222F6BEA60054CA7B /* PBXContainerItemProxy */;
 		};
-		3122ABC922F6CE4700BC0792 /* PBXTargetDependency */ = {
+		316FC5402307B108003E1DD3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3122905F22F6BE830054CA7B /* ViewGeneratorApp */;
-			targetProxy = 3122ABC822F6CE4700BC0792 /* PBXContainerItemProxy */;
+			target = 316FC5342307B107003E1DD3 /* ViewGeneratorCore */;
+			targetProxy = 316FC53F2307B108003E1DD3 /* PBXContainerItemProxy */;
+		};
+		316FC5492307B108003E1DD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 316FC5342307B107003E1DD3 /* ViewGeneratorCore */;
+			targetProxy = 316FC5482307B108003E1DD3 /* PBXContainerItemProxy */;
+		};
+		319AC55E2307B7870024CCEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 316FC5342307B107003E1DD3 /* ViewGeneratorCore */;
+			targetProxy = 319AC55D2307B7870024CCEA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -725,47 +832,103 @@
 			};
 			name = Release;
 		};
-		3122ABCB22F6CE4700BC0792 /* Debug */ = {
+		316FC54D2307B108003E1DD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = ViewGeneratorTests/Info.plist;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ViewGeneratorCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.ViewGeneratorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.ViewGeneratorCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewGeneratorApp.app/Contents/MacOS/ViewGeneratorApp";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		3122ABCC22F6CE4700BC0792 /* Release */ = {
+		316FC54E2307B108003E1DD3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = ViewGeneratorTests/Info.plist;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ViewGeneratorCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.ViewGeneratorCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		316FC54F2307B108003E1DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ViewGeneratorCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.ViewGeneratorTests;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.ViewGeneratorCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewGeneratorApp.app/Contents/MacOS/ViewGeneratorApp";
+			};
+			name = Debug;
+		};
+		316FC5502307B108003E1DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ViewGeneratorCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.funzin.ViewGeneratorCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -799,11 +962,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3122ABCA22F6CE4700BC0792 /* Build configuration list for PBXNativeTarget "ViewGeneratorTests" */ = {
+		316FC5512307B108003E1DD3 /* Build configuration list for PBXNativeTarget "ViewGeneratorCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3122ABCB22F6CE4700BC0792 /* Debug */,
-				3122ABCC22F6CE4700BC0792 /* Release */,
+				316FC54D2307B108003E1DD3 /* Debug */,
+				316FC54E2307B108003E1DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		316FC5522307B108003E1DD3 /* Build configuration list for PBXNativeTarget "ViewGeneratorCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				316FC54F2307B108003E1DD3 /* Debug */,
+				316FC5502307B108003E1DD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
