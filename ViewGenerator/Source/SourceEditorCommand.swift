@@ -44,10 +44,10 @@ extension SourceEditorCommand {
     private func selectedText(lines: NSMutableArray, selection: XCSourceTextRange) -> String? {
         let start = selection.start.column
         let end = selection.end.column
-        
+
         guard start != end,
             let line = lines[selection.end.line] as? String else { return nil }
-        
+
         let startIndex = line.index(line.startIndex, offsetBy: start)
         let endIndex = line.index(line.startIndex, offsetBy: end)
         let selectedText = String(line[startIndex..<endIndex])

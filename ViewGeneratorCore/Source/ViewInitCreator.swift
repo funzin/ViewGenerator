@@ -10,7 +10,7 @@ import Foundation
 
 /// Name space to create initializer closure text for view
 public struct ViewInitCreator {
-    
+
     public static let shared = ViewInitCreator()
 
     /// Create initializer closure text for view
@@ -20,7 +20,6 @@ public struct ViewInitCreator {
         let uiParts = UIParts(variableName: variableName)
         let space = String(repeating: " ", count: indentStart)
         let initArray = initTextArray(variableName: variableName, uiParts: uiParts)
-
 
         // read selected accessModifier on app
         let accessModifier: AccessModifier

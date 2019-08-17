@@ -26,8 +26,9 @@
 		316FC5582307B13E003E1DD3 /* UIPartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122ABCD22F6CE6C00BC0792 /* UIPartsTests.swift */; };
 		316FC5592307B13E003E1DD3 /* ViewInitCreatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C90DCB22FFC7FB0019D0C8 /* ViewInitCreatorTests.swift */; };
 		316FC55A2307B13E003E1DD3 /* AccessModifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3123DE0A22FFC3400048347F /* AccessModifierTests.swift */; };
-		8D25217D5F83C062027DC26F /* Pods_ViewGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD022E7ED72F8458D18C5D3 /* Pods_ViewGenerator.framework */; };
-		E4EB90217B2F4CBC0BACE979 /* Pods_ViewGeneratorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB768C0B5AC8AA7B1B97C2E /* Pods_ViewGeneratorApp.framework */; };
+		99B62F65FDC2AA95C8C4F7A9 /* Pods_ViewGeneratorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932965A902408EE65B329054 /* Pods_ViewGeneratorApp.framework */; };
+		AEA88FB589EDD54027B1F17C /* Pods_ViewGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93163BF94A3947D838C4613B /* Pods_ViewGenerator.framework */; };
+		C7F84FAE63AD392C461D9BCD /* Pods_ViewGeneratorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F34B4B2DF924518900CF04 /* Pods_ViewGeneratorCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,7 +88,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0BB768C0B5AC8AA7B1B97C2E /* Pods_ViewGeneratorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewGeneratorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20F34B4B2DF924518900CF04 /* Pods_ViewGeneratorCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewGeneratorCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CC8B85B19D3E94C6519984 /* Pods-ViewGeneratorCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewGeneratorCore.release.xcconfig"; path = "Target Support Files/Pods-ViewGeneratorCore/Pods-ViewGeneratorCore.release.xcconfig"; sourceTree = "<group>"; };
 		310B823622F8746E00141017 /* AccessModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessModifier.swift; sourceTree = "<group>"; };
 		310B823822F874FC00141017 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		310C229322FFC1280030A633 /* ViewInitCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInitCreator.swift; sourceTree = "<group>"; };
@@ -113,7 +115,9 @@
 		316FC53D2307B107003E1DD3 /* ViewGeneratorCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewGeneratorCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		316FC5462307B108003E1DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31C90DCB22FFC7FB0019D0C8 /* ViewInitCreatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInitCreatorTests.swift; sourceTree = "<group>"; };
-		3BD022E7ED72F8458D18C5D3 /* Pods_ViewGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49AA12573FC86EDFA9BDF065 /* Pods-ViewGeneratorCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewGeneratorCore.debug.xcconfig"; path = "Target Support Files/Pods-ViewGeneratorCore/Pods-ViewGeneratorCore.debug.xcconfig"; sourceTree = "<group>"; };
+		93163BF94A3947D838C4613B /* Pods_ViewGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		932965A902408EE65B329054 /* Pods_ViewGeneratorApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewGeneratorApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABD586E2EE2C5BDE4D2D9E1 /* Pods-ViewGenerator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewGenerator.debug.xcconfig"; path = "Target Support Files/Pods-ViewGenerator/Pods-ViewGenerator.debug.xcconfig"; sourceTree = "<group>"; };
 		D26CF34314AEF5E7D7E5DA5A /* Pods-ViewGeneratorApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewGeneratorApp.debug.xcconfig"; path = "Target Support Files/Pods-ViewGeneratorApp/Pods-ViewGeneratorApp.debug.xcconfig"; sourceTree = "<group>"; };
 		EE0E1B63B66CA97F60E6FBCC /* Pods-ViewGenerator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewGenerator.release.xcconfig"; path = "Target Support Files/Pods-ViewGenerator/Pods-ViewGenerator.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,7 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				316FC54A2307B108003E1DD3 /* ViewGeneratorCore.framework in Frameworks */,
-				E4EB90217B2F4CBC0BACE979 /* Pods_ViewGeneratorApp.framework in Frameworks */,
+				99B62F65FDC2AA95C8C4F7A9 /* Pods_ViewGeneratorApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3122907A22F6BEA60054CA7B /* Cocoa.framework in Frameworks */,
-				8D25217D5F83C062027DC26F /* Pods_ViewGenerator.framework in Frameworks */,
+				AEA88FB589EDD54027B1F17C /* Pods_ViewGenerator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F84FAE63AD392C461D9BCD /* Pods_ViewGeneratorCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +169,8 @@
 				EE0E1B63B66CA97F60E6FBCC /* Pods-ViewGenerator.release.xcconfig */,
 				D26CF34314AEF5E7D7E5DA5A /* Pods-ViewGeneratorApp.debug.xcconfig */,
 				FEDEBBCF0B292D1265CAE7CD /* Pods-ViewGeneratorApp.release.xcconfig */,
+				49AA12573FC86EDFA9BDF065 /* Pods-ViewGeneratorCore.debug.xcconfig */,
+				21CC8B85B19D3E94C6519984 /* Pods-ViewGeneratorCore.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -205,8 +212,9 @@
 			isa = PBXGroup;
 			children = (
 				3122907922F6BEA60054CA7B /* Cocoa.framework */,
-				3BD022E7ED72F8458D18C5D3 /* Pods_ViewGenerator.framework */,
-				0BB768C0B5AC8AA7B1B97C2E /* Pods_ViewGeneratorApp.framework */,
+				93163BF94A3947D838C4613B /* Pods_ViewGenerator.framework */,
+				932965A902408EE65B329054 /* Pods_ViewGeneratorApp.framework */,
+				20F34B4B2DF924518900CF04 /* Pods_ViewGeneratorCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -351,10 +359,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 316FC5512307B108003E1DD3 /* Build configuration list for PBXNativeTarget "ViewGeneratorCore" */;
 			buildPhases = (
+				AC91A0B2213262C89E2FA1E9 /* [CP] Check Pods Manifest.lock */,
 				316FC5302307B107003E1DD3 /* Headers */,
 				316FC5312307B107003E1DD3 /* Sources */,
 				316FC5322307B107003E1DD3 /* Frameworks */,
 				316FC5332307B107003E1DD3 /* Resources */,
+				317BC0502307CFEB006522E6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -480,6 +490,23 @@
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
+		317BC0502307CFEB006522E6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n\n";
+		};
 		31B47A9722F6CB1100F41921 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -536,6 +563,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ViewGenerator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC91A0B2213262C89E2FA1E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViewGeneratorCore-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -834,6 +883,7 @@
 		};
 		316FC54D2307B108003E1DD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49AA12573FC86EDFA9BDF065 /* Pods-ViewGeneratorCore.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
@@ -865,6 +915,7 @@
 		};
 		316FC54E2307B108003E1DD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21CC8B85B19D3E94C6519984 /* Pods-ViewGeneratorCore.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;

@@ -1,2 +1,4 @@
 comment:
   behavior: new
+ignore:
+  - "ViewGeneratorCoreTests/"
