@@ -3,6 +3,12 @@
 </p>
 
 <p align="center">
+  <a href=https://travis-ci.org/funzin/ViewGenerator>
+    <img src=https://travis-ci.org/funzin/ViewGenerator.svg?branch=master />
+  </a>
+  <a href=https://codecov.io/gh/funzin/ViewGenerator>
+    <img src=https://codecov.io/gh/funzin/ViewGenerator/branch/master/graph/badge.svg>
+  </a>
   <img src="http://img.shields.io/badge/platform-iOS-blue.svg?style=flat" alt="Platform" />
   <a href="https://developer.apple.com/swift">
     <img src="http://img.shields.io/badge/Swift-5.0-brightgreen.svg?style=flat" alt="Language">
@@ -10,12 +16,6 @@
   <a href="./LICENSE">
     <img src="https://img.shields.io/github/license/funzin/ViewGenerator" alt="License" />
   </a>
-    
-  <!---
-   travis ci badge
-   codecov
-  -->
-  
   <a href="https://twitter.com/fufunzin">
     <img src="https://img.shields.io/badge/twitter-@fufunzin-blue.svg" alt="License" />
   </a>
