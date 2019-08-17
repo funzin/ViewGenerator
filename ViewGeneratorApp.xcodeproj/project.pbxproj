@@ -364,7 +364,7 @@
 				316FC5312307B107003E1DD3 /* Sources */,
 				316FC5322307B107003E1DD3 /* Frameworks */,
 				316FC5332307B107003E1DD3 /* Resources */,
-				312DE0DB2307CC750010641B /* ShellScript */,
+				317BC0502307CFEB006522E6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -490,7 +490,7 @@
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
-		312DE0DB2307CC750010641B /* ShellScript */ = {
+		317BC0502307CFEB006522E6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -505,7 +505,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n\n";
 		};
 		31B47A9722F6CB1100F41921 /* Run SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
