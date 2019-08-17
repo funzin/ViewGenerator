@@ -1,22 +1,17 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
+use_frameworks!
 
 
 
-pod 'SwiftLint', '0.34.0'
   
-target 'ViewGenerator' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for ViewGenerator
-
+target 'ViewGeneratorApp' do
+  pod 'SwiftLint', '0.34.0'
 end
 
-target 'ViewGeneratorApp' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-  use_frameworks!
-
-  # Pods for ViewGeneratorApp
-
+target 'ViewGenerator' do 
+  pod 'SwiftLint', '0.34.0'
+end
+target 'ViewGeneratorCore' do
+  pod 'SwiftLint', '0.34.0'
 end
