@@ -743,7 +743,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewGeneratorApp.app/Contents/MacOS/ViewGeneratorApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewGeneratorForXcode.app/Contents/MacOS/ViewGeneratorForXcode";
 			};
 			name = Debug;
 		};
@@ -765,7 +765,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewGeneratorApp.app/Contents/MacOS/ViewGeneratorApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViewGeneratorForXcode.app/Contents/MacOS/ViewGeneratorForXcode";
 			};
 			name = Release;
 		};
