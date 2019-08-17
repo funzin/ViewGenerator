@@ -9,29 +9,29 @@
 import Foundation
 
 extension UserDefaults {
-    enum KeyList {
-        static let accessModifier = Key<String>(name: "accessModifier")
+    public enum KeyList {
+        public static let accessModifier = Key<String>(name: "accessModifier")
     }
 }
 
 extension UserDefaults {
-    static let group: UserDefaults! = UserDefaults(suiteName: "E5RDJ83DDA.com.funzin.ViewGeneratorApp")
+    public static let group: UserDefaults! = UserDefaults(suiteName: "E5RDJ83DDA.com.funzin.ViewGeneratorApp")
 
-    func set<ValueType>(_ value: ValueType, forKey key: Key<ValueType>) {
+    public func set<ValueType>(_ value: ValueType, forKey key: Key<ValueType>) {
         set(value, forKey: key.name)
     }
 
-    func get<ValueType>(forKey key: Key<ValueType>) -> ValueType? {
+    public func get<ValueType>(forKey key: Key<ValueType>) -> ValueType? {
         return value(forKey: key.name) as? ValueType
     }
 
-    func removeAll() {
+    public func removeAll() {
         let dictionary = dictionaryRepresentation()
         dictionary.keys.forEach { key in removeObject(forKey: key) }
     }
 }
 
-struct Key<ValueType> {
+public struct Key<ValueType> {
     let name: String
 
     init(name: String) {

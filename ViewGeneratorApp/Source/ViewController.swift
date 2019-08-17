@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import ViewGeneratorCore
 
 class ViewController: NSViewController {
 

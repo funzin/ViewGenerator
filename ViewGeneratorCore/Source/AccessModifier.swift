@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum AccessModifier: String, CaseIterable {
+public enum AccessModifier: String, CaseIterable {
     case `private`
     case `fileprivate`
     case `internal`

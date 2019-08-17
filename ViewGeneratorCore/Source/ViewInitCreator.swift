@@ -9,14 +9,14 @@
 import Foundation
 
 /// Name space to create initializer closure text for view
-struct ViewInitCreator {
+public struct ViewInitCreator {
     
-    static let shared = ViewInitCreator()
+    public static let shared = ViewInitCreator()
 
     /// Create initializer closure text for view
     /// - Parameter indentStart: start indent position
     /// - Parameter variableName: variable name(e.g: hogeView, hogeLabel)
-    func create(indentStart: Int, variableName: String) -> String {
+    public func create(indentStart: Int, variableName: String) -> String {
         let uiParts = UIParts(variableName: variableName)
         let space = String(repeating: " ", count: indentStart)
         let initArray = initTextArray(variableName: variableName, uiParts: uiParts)

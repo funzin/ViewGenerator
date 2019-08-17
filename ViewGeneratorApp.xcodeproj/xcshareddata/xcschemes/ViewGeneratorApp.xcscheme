@@ -28,19 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3122ABC222F6CE4700BC0792"
-               BuildableName = "ViewGeneratorTests.xctest"
-               BlueprintName = "ViewGeneratorTests"
-               ReferencedContainer = "container:ViewGeneratorApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -62,8 +50,6 @@
             ReferencedContainer = "container:ViewGeneratorApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
