@@ -2,16 +2,17 @@
 # platform :ios, '9.0'
 use_frameworks!
 
-
-
-  
-target 'ViewGeneratorApp' do
+def install_pods
   pod 'SwiftLint', '0.34.0'
+end
+
+target 'ViewGeneratorApp' do
+  install_pods
 end
 
 target 'ViewGenerator' do 
-  pod 'SwiftLint', '0.34.0'
+  install_pods
 end
 target 'ViewGeneratorCore' do
-  pod 'SwiftLint', '0.34.0'
+  install_pods
 end
