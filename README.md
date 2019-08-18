@@ -24,6 +24,12 @@
 ## Overview
 ViewGenerator generates view code from variable name automatically when you create view by code in iOS development
 
+## Download
+<a href="https://apps.apple.com/us/app/viewgenerator-for-xcode/id1476703048?l=ja&ls=1&mt=12">
+  <img src="https://user-images.githubusercontent.com/12893657/63224925-294cc480-c206-11e9-83c6-48cf001a0cd0.png" width=20% />
+</a>
+
+
 ## Environment
 - Xcode 10.3 or greater
 - Swift 5.0 or greator
