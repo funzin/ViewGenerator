@@ -935,6 +935,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21CC8B85B19D3E94C6519984 /* Pods-ViewGeneratorCore.release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
