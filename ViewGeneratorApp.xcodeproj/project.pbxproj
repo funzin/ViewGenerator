@@ -323,6 +323,7 @@
 				3122908822F6BEA60054CA7B /* Embed App Extensions */,
 				31B47A9722F6CB1100F41921 /* Run SwiftLint */,
 				316FC54C2307B108003E1DD3 /* Embed Frameworks */,
+				313740CB230D93900012285D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -489,6 +490,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
+		};
+		313740CB230D93900012285D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ${CONFIGURATION} == \"Release\" ]; then\n  cd \"${PROJECT_DIR}\"\n  agvtool next-version -all\nfi\n";
 		};
 		317BC0502307CFEB006522E6 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -917,6 +935,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21CC8B85B19D3E94C6519984 /* Pods-ViewGeneratorCore.release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
