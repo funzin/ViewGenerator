@@ -63,16 +63,16 @@ ViewGenerator generates view code from variable name automatically when you crea
 4. Generated⚒
 
 ### Usage Example
+#### Multiple variables
+||GIF|
+|:-:|:-:|
+|select|<img src=./Resource/gif/demo.gif width=70%>|
+
 #### Single Variable
 ||GIF|
 |:-:|:-:|
 |not_select|<img src=./Resource/gif/not_select.gif>|
 |select|<img src=./Resource/gif/select.gif>|
-
-#### Multiple variables
-||GIF|
-|:-:|:-:|
-|select|<img src=./Resource/gif/demo.gif width=70%>|
 
 
 ### Recommend
