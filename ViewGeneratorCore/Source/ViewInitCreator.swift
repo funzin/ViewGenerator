@@ -67,7 +67,7 @@ public struct ViewInitCreator {
     /// Return variable start position and variale name
     /// - Parameter lineStr: line string
     func variableStartPositionAndName(lineStr: String) -> (Int, String)? {
-        guard let regex = try? NSRegularExpression(pattern: "^(\\s*)(\\S+$)"),
+        guard let regex = try? NSRegularExpression(pattern: "^(\\s*)(\\S+)"),
             let matched = regex.firstMatch(in: lineStr, range: NSRange(location: 0, length: lineStr.count)),
             matched.numberOfRanges == 3 else { return nil }
 
