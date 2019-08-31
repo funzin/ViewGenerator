@@ -13,12 +13,52 @@ public struct ViewInitGenerator {
 
     public static let shared = ViewInitGenerator()
 
+    /// Generate initializer closure text array
+    ///
+    /// ```
+    /// // e.g. initializer closure text
+    /// private let hogeView: UIView = {
+    ///     let hogeView = UIView(frame: .zero)
+    ///     hogeView.translatesAutoresizingMaskIntoConstraints = false
+    ///     return hogeView
+    /// }()
+    /// ```
+    ///
+    /// - Parameter selectedLines: selected lines
+    public func generateInitArray(selectedLines: [String]) -> [String] {
+        var viewInitArray: [String] = []
+
+        for selectedLine in selectedLines {
+            guard let (startPosition, variableName) = variableStartPositionAndName(lineStr: selectedLine) else {
+                return []
+            }
+
+            let initText = ViewInitGenerator.shared.generate(startPosition: startPosition, variableName: variableName)
+            viewInitArray.append(initText)
+        }
+        return viewInitArray
+    }
+}
+
+/// MARK: internal method
+extension ViewInitGenerator {
+
     /// Generate initializer closure text for view
-    /// - Parameter indentStart: start indent position
+    ///
+    /// ```
+    /// // e.g. initializer closure text
+    /// private let hogeView: UIView = {
+    ///     let hogeView = UIView(frame: .zero)
+    ///     hogeView.translatesAutoresizingMaskIntoConstraints = false
+    ///     return hogeView
+    /// }()
+    /// ```
+    ///
+    /// - Parameter startPosition: variable name start position
     /// - Parameter variableName: variable name(e.g: hogeView, hogeLabel)
-    public func generate(indentStart: Int, variableName: String) -> String {
+    func generate(startPosition: Int, variableName: String) -> String {
         let uiParts = UIParts(variableName: variableName)
-        let space = String(repeating: " ", count: indentStart)
+        let space = String(repeating: " ", count: startPosition)
         let initArray = initTextArray(variableName: variableName, uiParts: uiParts)
 
         // read selected accessModifier on app
@@ -36,7 +76,7 @@ public struct ViewInitGenerator {
             "    \(variableName).translatesAutoresizingMaskIntoConstraints = false",
             "    return \(variableName)",
             "}()\n"
-            ]
+        ]
 
         // insert
         initArray.reversed().forEach { initClosureTextArray.insert($0, at: 1) }
@@ -46,22 +86,6 @@ public struct ViewInitGenerator {
             .map { "\(space)\($0)\n" }
             .joined()
         return initClosureText
-    }
-
-    /// Generate view init array
-    /// - Parameter selectedLines: selected lines
-    public func generateViewInitArray(selectedLines: [String]) -> [String] {
-        var viewInitArray: [String] = []
-
-        for selectedLine in selectedLines {
-            guard let (startPosition, variableName) = variableStartPositionAndName(lineStr: selectedLine) else {
-                return []
-            }
-
-            let initText = ViewInitGenerator.shared.generate(indentStart: startPosition, variableName: variableName)
-            viewInitArray.append(initText)
-        }
-        return viewInitArray
     }
 
     /// Return variable start position and variale name
@@ -77,6 +101,10 @@ public struct ViewInitGenerator {
 
         return(spaceStr.count, variableName)
     }
+}
+
+/// MARK: private method
+extension ViewInitGenerator {
 
     /// Generate view init
     /// - Parameter variableName: variable name(e.g: hogeView, hogeLabel)

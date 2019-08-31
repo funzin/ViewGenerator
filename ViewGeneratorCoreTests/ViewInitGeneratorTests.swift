@@ -48,12 +48,12 @@ class ViewInitGeneratorTests: XCTestCase {
         ]
 
         for (variableName, initClosureText) in zip(variableNameArray, initClosureTextArray) {
-            XCTAssertEqual(viewInitGenerator.generate(indentStart: 0, variableName: variableName), initClosureText)
+            XCTAssertEqual(viewInitGenerator.generate(startPosition: 0, variableName: variableName), initClosureText)
         }
     }
 
     func testGenerateWhenHaveIndent() {
-        let startIndent = 2
+        let startPosition = 2
         let variableName = "hogeView"
 
         let initClosureText =
@@ -66,7 +66,7 @@ class ViewInitGeneratorTests: XCTestCase {
             \n
             """
 
-        XCTAssertEqual(viewInitGenerator.generate(indentStart: startIndent, variableName: variableName), initClosureText)
+        XCTAssertEqual(viewInitGenerator.generate(startPosition: startPosition, variableName: variableName), initClosureText)
     }
 
     func testGenerateWhenSelectedAccessModifier() {
@@ -83,7 +83,7 @@ class ViewInitGeneratorTests: XCTestCase {
             """
 
         UserDefaults.group.set(selectedAccessModifier, forKey: UserDefaults.KeyList.accessModifier)
-        XCTAssertEqual(viewInitGenerator.generate(indentStart: 0, variableName: variableName), initClosureText)
+        XCTAssertEqual(viewInitGenerator.generate(startPosition: 0, variableName: variableName), initClosureText)
     }
 
     func testVariableStartPositionAndName() {
@@ -99,9 +99,10 @@ class ViewInitGeneratorTests: XCTestCase {
         }
     }
 
-    func testGenerateViewInitArray() {
-        let selectedLinesArray = [[], ["hogeView"], ["  hogeView", "  hogeButton"]]
+    func testGenerateInitArray() {
+        let selectedLinesArray = [[], [""], ["hogeView"], ["  hogeView", "  hogeButton"]]
         let initArray = [
+            "",
             "",
             """
             private let hogeView: UIView = {
@@ -128,7 +129,7 @@ class ViewInitGeneratorTests: XCTestCase {
         ]
 
         for (selectedLines, initText) in zip(selectedLinesArray, initArray) {
-            let result = viewInitGenerator.generateViewInitArray(selectedLines: selectedLines)
+            let result = viewInitGenerator.generateInitArray(selectedLines: selectedLines)
             XCTAssertEqual(initText, result.joined())
         }
     }
