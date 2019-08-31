@@ -99,7 +99,7 @@ class ViewInitGeneratorTests: XCTestCase {
         }
     }
 
-    func testGenerateViewInitArray() {
+    func testGenerateInitArray() {
         let selectedLinesArray = [[], ["hogeView"], ["  hogeView", "  hogeButton"]]
         let initArray = [
             "",
@@ -128,7 +128,7 @@ class ViewInitGeneratorTests: XCTestCase {
         ]
 
         for (selectedLines, initText) in zip(selectedLinesArray, initArray) {
-            let result = viewInitGenerator.generateViewInitArray(selectedLines: selectedLines)
+            let result = viewInitGenerator.generateInitArray(selectedLines: selectedLines)
             XCTAssertEqual(initText, result.joined())
         }
     }

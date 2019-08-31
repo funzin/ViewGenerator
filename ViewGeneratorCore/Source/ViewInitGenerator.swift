@@ -15,7 +15,7 @@ public struct ViewInitGenerator {
 
     /// Generate view init array
     /// - Parameter selectedLines: selected lines
-    public func generateViewInitArray(selectedLines: [String]) -> [String] {
+    public func generateInitArray(selectedLines: [String]) -> [String] {
         var viewInitArray: [String] = []
 
         for selectedLine in selectedLines {
