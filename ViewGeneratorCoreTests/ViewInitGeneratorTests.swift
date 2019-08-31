@@ -1,5 +1,5 @@
 //
-//  ViewInitCreatorTests.swift
+//  ViewInitGeneratorTests.swift
 //  ViewGeneratorTests
 //
 //  Created by funzin on 2019/08/11.
@@ -9,15 +9,15 @@
 import XCTest
 
 @testable import ViewGeneratorCore
-class ViewInitCreatorTests: XCTestCase {
-    var viewInitCreator: ViewInitCreator!
+class ViewInitGeneratorTests: XCTestCase {
+    var viewInitGenerator: ViewInitGenerator!
 
     override func setUp() {
-        viewInitCreator = ViewInitCreator.shared
+        viewInitGenerator = ViewInitGenerator.shared
         UserDefaults.group.removeAll()
     }
 
-    func testCreate() {
+    func testGenerate() {
         let variableNameArray = ["hogeCollectionView", "hogeView", "hoge"]
         let initClosureTextArray = [
             """
@@ -48,11 +48,11 @@ class ViewInitCreatorTests: XCTestCase {
         ]
 
         for (variableName, initClosureText) in zip(variableNameArray, initClosureTextArray) {
-            XCTAssertEqual(viewInitCreator.create(indentStart: 0, variableName: variableName), initClosureText)
+            XCTAssertEqual(viewInitGenerator.generate(indentStart: 0, variableName: variableName), initClosureText)
         }
     }
 
-    func testCreatetWhenHaveIndent() {
+    func testGenerateWhenHaveIndent() {
         let startIndent = 2
         let variableName = "hogeView"
 
@@ -66,10 +66,10 @@ class ViewInitCreatorTests: XCTestCase {
             \n
             """
 
-        XCTAssertEqual(viewInitCreator.create(indentStart: startIndent, variableName: variableName), initClosureText)
+        XCTAssertEqual(viewInitGenerator.generate(indentStart: startIndent, variableName: variableName), initClosureText)
     }
 
-    func testCreateWhenSelectedAccessModifier() {
+    func testGenerateWhenSelectedAccessModifier() {
         let variableName = "hogeView"
         let selectedAccessModifier = "internal"
         let initClosureText =
@@ -83,15 +83,15 @@ class ViewInitCreatorTests: XCTestCase {
             """
 
         UserDefaults.group.set(selectedAccessModifier, forKey: UserDefaults.KeyList.accessModifier)
-        XCTAssertEqual(viewInitCreator.create(indentStart: 0, variableName: variableName), initClosureText)
+        XCTAssertEqual(viewInitGenerator.generate(indentStart: 0, variableName: variableName), initClosureText)
     }
 
-    func test_variableStartPositionAndName() {
+    func testVariableStartPositionAndName() {
         let lines = ["hogeLabel", " hogeButton", "  hogeView", " hogeLabel "]
         let results = [(0, "hogeLabel"), (1, "hogeButton"), (2, "hogeView"), (1, "hogeLabel")]
 
         for (line, result) in zip(lines, results) {
-            let tuple = viewInitCreator.variableStartPositionAndName(lineStr: line)
+            let tuple = viewInitGenerator.variableStartPositionAndName(lineStr: line)
             let startPosition = tuple?.0
             let variableName = tuple?.1
             XCTAssertEqual(startPosition, result.0)
@@ -99,7 +99,7 @@ class ViewInitCreatorTests: XCTestCase {
         }
     }
 
-    func test_generateViewInitArray() {
+    func testGenerateViewInitArray() {
         let selectedLinesArray = [[], ["hogeView"], ["  hogeView", "  hogeButton"]]
         let initArray = [
             "",
@@ -128,7 +128,7 @@ class ViewInitCreatorTests: XCTestCase {
         ]
 
         for (selectedLines, initText) in zip(selectedLinesArray, initArray) {
-            let result = viewInitCreator.generateViewInitArray(selectedLines: selectedLines)
+            let result = viewInitGenerator.generateViewInitArray(selectedLines: selectedLines)
             XCTAssertEqual(initText, result.joined())
         }
     }
