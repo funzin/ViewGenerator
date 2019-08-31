@@ -13,7 +13,17 @@ public struct ViewInitGenerator {
 
     public static let shared = ViewInitGenerator()
 
-    /// Generate view init array
+    /// Generate initializer closure text array
+    ///
+    /// ```
+    /// // e.g. initializer closure text
+    /// private let hogeView: UIView = {
+    ///     let hogeView = UIView(frame: .zero)
+    ///     hogeView.translatesAutoresizingMaskIntoConstraints = false
+    ///     return hogeView
+    /// }()
+    /// ```
+    ///
     /// - Parameter selectedLines: selected lines
     public func generateInitArray(selectedLines: [String]) -> [String] {
         var viewInitArray: [String] = []
@@ -34,6 +44,16 @@ public struct ViewInitGenerator {
 extension ViewInitGenerator {
 
     /// Generate initializer closure text for view
+    ///
+    /// ```
+    /// // e.g. initializer closure text
+    /// private let hogeView: UIView = {
+    ///     let hogeView = UIView(frame: .zero)
+    ///     hogeView.translatesAutoresizingMaskIntoConstraints = false
+    ///     return hogeView
+    /// }()
+    /// ```
+    ///
     /// - Parameter startPosition: variable name start position
     /// - Parameter variableName: variable name(e.g: hogeView, hogeLabel)
     func generate(startPosition: Int, variableName: String) -> String {
