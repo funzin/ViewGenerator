@@ -100,8 +100,9 @@ class ViewInitGeneratorTests: XCTestCase {
     }
 
     func testGenerateInitArray() {
-        let selectedLinesArray = [[], ["hogeView"], ["  hogeView", "  hogeButton"]]
+        let selectedLinesArray = [[], [""], ["hogeView"], ["  hogeView", "  hogeButton"]]
         let initArray = [
+            "",
             "",
             """
             private let hogeView: UIView = {
