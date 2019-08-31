@@ -86,6 +86,19 @@ class ViewInitCreatorTests: XCTestCase {
         XCTAssertEqual(viewInitCreator.create(indentStart: 0, variableName: variableName), initClosureText)
     }
 
+    func test_variableStartPositionAndName() {
+        let lines = ["hogeLabel", " hogeButton", "  hogeView", " hogeLabel "]
+        let results = [(0, "hogeLabel"), (1, "hogeButton"), (2, "hogeView"), nil]
+
+        for (line, result) in zip(lines, results) {
+            let tuple = viewInitCreator.variableStartPositionAndName(lineStr: line)
+            let startPosition = tuple?.0
+            let variableName = tuple?.1
+            XCTAssertEqual(startPosition, result?.0)
+            XCTAssertEqual(variableName, result?.1)
+        }
+    }
+
     func test_generateViewInitArray() {
         let selectedLinesArray = [[], ["hogeView "], ["hogeView ", "hogButton"], ["hogeView"], ["  hogeView", "  hogeButton"]]
         let initArray = [
