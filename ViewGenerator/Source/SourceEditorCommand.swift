@@ -20,37 +20,31 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         let lines = textBuffer.lines
         let selections = textBuffer.selections
 
-        // extract selected line
+        // extract
         guard let selection = selections.firstObject as? XCSourceTextRange,
-            let variableName = selectedText(lines: lines, selection: selection) else {
-                completionHandler(NSError(domain: Const.domain, code: 401, userInfo: ["reason": "text is not selected"]))
-                return
+            let _lines = Array(lines) as? [String] else {
+            completionHandler(NSError(domain: Const.domain, code: 401, userInfo: ["reason": "text is not selected"]))
+            return
         }
 
-        let initText = ViewInitCreator.shared.create(indentStart: selection.start.column, variableName: variableName)
+        let selectedLines = Array(_lines[selection.start.line...selection.end.line])
+        let startLine = selection.start.line
+        let endLine = selection.end.line
+
+        // create variable
+        let initArray = ViewInitCreator.shared.generateViewInitArray(selectedLines: selectedLines)
+        guard !initArray.isEmpty else {
+            completionHandler(NSError(domain: Const.domain, code: 402, userInfo: ["reason": "selected lines are not converted"]))
+            return
+        }
+
+        // remove lines
+        for (i, line) in (startLine...endLine).enumerated() {
+            lines.remove(lines[line - i])
+        }
 
         // replace
-        let line = selection.end.line
-        lines.remove(lines[line])
-        lines.insert(initText, at: line)
-
+        lines.insert(initArray.joined(), at: startLine)
         completionHandler(nil)
-    }
-}
-
-extension SourceEditorCommand {
-
-    /// Extract selected text
-    private func selectedText(lines: NSMutableArray, selection: XCSourceTextRange) -> String? {
-        let start = selection.start.column
-        let end = selection.end.column
-
-        guard start != end,
-            let line = lines[selection.end.line] as? String else { return nil }
-
-        let startIndex = line.index(line.startIndex, offsetBy: start)
-        let endIndex = line.index(line.startIndex, offsetBy: end)
-        let selectedText = String(line[startIndex..<endIndex])
-        return selectedText
     }
 }
