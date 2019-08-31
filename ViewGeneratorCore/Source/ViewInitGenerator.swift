@@ -8,15 +8,15 @@
 
 import Foundation
 
-/// Name space to create initializer closure text for view
-public struct ViewInitCreator {
+/// Name space to generate initializer closure text for view
+public struct ViewInitGenerator {
 
-    public static let shared = ViewInitCreator()
+    public static let shared = ViewInitGenerator()
 
-    /// Create initializer closure text for view
+    /// Generate initializer closure text for view
     /// - Parameter indentStart: start indent position
     /// - Parameter variableName: variable name(e.g: hogeView, hogeLabel)
-    public func create(indentStart: Int, variableName: String) -> String {
+    public func generate(indentStart: Int, variableName: String) -> String {
         let uiParts = UIParts(variableName: variableName)
         let space = String(repeating: " ", count: indentStart)
         let initArray = initTextArray(variableName: variableName, uiParts: uiParts)
@@ -58,7 +58,7 @@ public struct ViewInitCreator {
                 return []
             }
 
-            let initText = ViewInitCreator.shared.create(indentStart: startPosition, variableName: variableName)
+            let initText = ViewInitGenerator.shared.generate(indentStart: startPosition, variableName: variableName)
             viewInitArray.append(initText)
         }
         return viewInitArray
@@ -78,7 +78,7 @@ public struct ViewInitCreator {
         return(spaceStr.count, variableName)
     }
 
-    /// Create view init
+    /// Generate view init
     /// - Parameter variableName: variable name(e.g: hogeView, hogeLabel)
     /// - Parameter uiParts: UIParts contains type information
     private func initTextArray(variableName: String, uiParts: UIParts) -> [String] {
