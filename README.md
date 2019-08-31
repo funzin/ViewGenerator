@@ -38,7 +38,7 @@ ViewGenerator generates view code from variable name automatically when you crea
 - Swift 5.0 or greator
 
 ## Demo
-![Demo](./Resource/gif/demo.gif)
+<img src=./Resource/gif/demo.gif width=70%>
 
 ## Install
 1. Install [ViewGenerator](https://apps.apple.com/us/app/viewgenerator-for-xcode/id1476703048?l=ja&ls=1&mt=12) from AppStore
@@ -61,6 +61,19 @@ ViewGenerator generates view code from variable name automatically when you crea
 <img src=./Resource/screenshot/generate_view_code.png width=70%>
 
 4. Generated⚒
+
+### Usage Example
+#### Single Variable
+||GIF|
+|:-:|:-:|
+|not_select|<img src=./Resource/gif/not_select.gif>|
+|select|<img src=./Resource/gif/select.gif>|
+
+#### Multiple variables
+||GIF|
+|:-:|:-:|
+|select|<img src=./Resource/gif/demo.gif width=70%>|
+
 
 ### Recommend
 **I strongly recommend that you register `Generate View Code` Command to shortcut**
