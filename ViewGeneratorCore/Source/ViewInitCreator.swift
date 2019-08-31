@@ -48,6 +48,22 @@ public struct ViewInitCreator {
         return initClosureText
     }
 
+    /// Generate view init array
+    /// - Parameter selectedLines: selected lines
+    public func generateViewInitArray(selectedLines: [String]) -> [String] {
+        var viewInitArray: [String] = []
+
+        for selectedLine in selectedLines {
+            guard let (startPosition, variableName) = variableStartPositionAndName(lineStr: selectedLine) else {
+                return []
+            }
+
+            let initText = ViewInitCreator.shared.create(indentStart: startPosition, variableName: variableName)
+            viewInitArray.append(initText)
+        }
+        return viewInitArray
+    }
+
     /// Create view init
     /// - Parameter variableName: variable name(e.g: hogeView, hogeLabel)
     /// - Parameter uiParts: UIParts contains type information
