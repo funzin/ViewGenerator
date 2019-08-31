@@ -34,11 +34,11 @@ public struct ViewInitGenerator {
 extension ViewInitGenerator {
 
     /// Generate initializer closure text for view
-    /// - Parameter indentStart: variable name start position
+    /// - Parameter startPosition: variable name start position
     /// - Parameter variableName: variable name(e.g: hogeView, hogeLabel)
-    func generate(indentStart: Int, variableName: String) -> String {
+    func generate(startPosition: Int, variableName: String) -> String {
         let uiParts = UIParts(variableName: variableName)
-        let space = String(repeating: " ", count: indentStart)
+        let space = String(repeating: " ", count: startPosition)
         let initArray = initTextArray(variableName: variableName, uiParts: uiParts)
 
         // read selected accessModifier on app
