@@ -38,7 +38,7 @@ ViewGenerator generates view code from variable name automatically when you crea
 - Swift 5.0 or greator
 
 ## Demo
-![Demo](./Resource/gif/demo.gif)
+<img src=./Resource/gif/demo.gif width=70%>
 
 ## Install
 1. Install [ViewGenerator](https://apps.apple.com/us/app/viewgenerator-for-xcode/id1476703048?l=ja&ls=1&mt=12) from AppStore
@@ -70,6 +70,18 @@ ViewGenerator generates view code from variable name automatically when you crea
 3. Register shortcut
 
 <img src=./Resource/screenshot/shortcut.png width=70%>
+
+### Usage Example
+#### Multiple variables
+||GIF|
+|:-:|:-:|
+|select|<img src=./Resource/gif/demo.gif width=70%>|
+
+#### Single Variable
+||GIF|
+|:-:|:-:|
+|not_select|<img src=./Resource/gif/not_select.gif>|
+|select|<img src=./Resource/gif/select.gif>|
 
 ### Supplement
 Default access modifier is **private** . if you change access modifier, open viewgenerator app and then select access modifier that you want to select
