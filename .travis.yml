@@ -12,13 +12,14 @@ before_install:
 before_script:
   - set -o pipefail
 script:
-  - xcodebuild test -workspace ViewGeneratorApp.xcworkspace -scheme ViewGeneratorCore -configuration Debug -destination 'platform=macOS' | xcpretty -c
   - sonar-scanner
+  - xcodebuild test -workspace ViewGeneratorApp.xcworkspace -scheme ViewGeneratorCore -configuration Debug -destination 'platform=macOS' | xcpretty -c
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 notifications:
   email: false
 
+dist: trusty
 addons:
   sonarcloud:
     organization: "funzin"
