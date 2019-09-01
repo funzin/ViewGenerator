@@ -117,4 +117,4 @@ DerivedData/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 
-
+.scannerwork
