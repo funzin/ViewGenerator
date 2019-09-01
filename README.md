@@ -59,6 +59,15 @@ ViewGenerator generates view code from variable name automatically when you crea
 
 4. Generated⚒
 
+### Recommend
+**I strongly recommend that you register `Generate View Code` Command to shortcut**
+
+1. `Xcode Preferences` →　`KeyBindings`
+2. Input `ViewGenerator` in Search
+3. Register shortcut
+
+<img src=./Resource/screenshot/shortcut.png width=70%>
+
 ### Usage Example
 #### Multiple variables
 ||GIF|
@@ -70,16 +79,6 @@ ViewGenerator generates view code from variable name automatically when you crea
 |:-:|:-:|
 |not_select|<img src=./Resource/gif/not_select.gif>|
 |select|<img src=./Resource/gif/select.gif>|
-
-
-### Recommend
-**I strongly recommend that you register `Generate View Code` Command to shortcut**
-
-1. `Xcode Preferences` →　`KeyBindings`
-2. Input `ViewGenerator` in Search
-3. Register shortcut
-
-<img src=./Resource/screenshot/shortcut.png width=70%>
 
 ### Supplement
 Default access modifier is **private** . if you change access modifier, open viewgenerator app and then select access modifier that you want to select
