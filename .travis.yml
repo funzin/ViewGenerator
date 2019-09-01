@@ -12,8 +12,16 @@ before_install:
 before_script:
   - set -o pipefail
 script:
+  - sonar-scanner
   - xcodebuild test -workspace ViewGeneratorApp.xcworkspace -scheme ViewGeneratorCore -configuration Debug -destination 'platform=macOS' | xcpretty -c
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 notifications:
   email: false
+
+dist: trusty
+addons:
+  sonarcloud:
+    organization: "funzin"
+    token:
+      secure: "x7LUxBgbD369/OnfkAtAFnXhJhoCn9WUcYRe+zwo2QGjFeW07iAkIBEe/jSCThzK7wBOzazle55elPM/QoAVQ7SMhuOg6ezAgdb5xM0P+HuUaB4j3PKBuBarQVmn4hDheFVZpMCY5uSiiy1zrU5SXc2PpGS9kYH14vTHEUlDCS5rMowM7sPRacoZCcRjfsoo8zXflnfxq362/qd89b1huezaPcG6lPcG6BcxHpEmbjuUuihV3Q6mbLmgSRk8+NZWLpp6qNCuVsRf4N/Hf5P8s3crENR9YnPiZKUx9mHtqgcQgBVOfPQ4qpdkoARqiJ3c8Q2blxXMAr0Jpkg+DZzN9UfnmRsKQVympd3vJHxm+Fs7U2/RkHVLXE0bxYTVzHcQRCgEWl/505UnnbvyvlKx7Q3CHp6Pf7V43opie6Ao4mjgaNIk+ADb0/Xr+eLiFlOLmUomQTX/RSy3qLtY+xV441uvlvSVKZRwGULWAplbOC7lOzX4f9QolOZjFHaffhk1KkWr68iiQ16QCOMM//izXvwUnih75Ul9SF3sigqHUSiZfueThb9d+MlIQruxbEPMTLi99qSQ0qBV7Or2gtTVQwGmZfp8PGamlIqjeXcjqYiZBJZVNZsTxD97qztZM0uZ4vvdp8Cw8sQogDog/mX6LuJpXkOvkBCZh8vnXPEutUo="
