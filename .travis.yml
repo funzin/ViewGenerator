@@ -12,13 +12,13 @@ before_install:
 before_script:
   - set -o pipefail
 script:
-  - sonar-scanner
-  - xcodebuild test -workspace ViewGeneratorApp.xcworkspace -scheme ViewGeneratorCore -configuration Debug -destination 'platform=macOS' | xcpretty -c
+  - xcodebuild test -workspace ViewGeneratorApp.xcworkspace -scheme ViewGeneratorCore -configuration Debug -destination 'platform=macOS' -derivedDataPath Build/ | xcpretty -c
+  - find . -type d | grep -E ".xccovarchive" | xargs -I@ bash scripts/xccov-to-sonarqube-generic.sh @ > sonarqube-generic-coverage.xml
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -D Build/
+  - sonar-scanner
 notifications:
   email: false
-
 dist: trusty
 addons:
   sonarcloud:
