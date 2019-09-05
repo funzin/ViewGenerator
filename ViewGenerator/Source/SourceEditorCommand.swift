@@ -27,9 +27,13 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
             return
         }
 
-        let selectedLines = Array(_lines[selection.start.line...selection.end.line])
         let startLine = selection.start.line
-        let endLine = selection.end.line
+
+        // when multiple lines are selected, selection.end.line may point to the next line
+        let endLine = (selection.end.column == 0 && (selection.start.line != selection.end.line))
+            ? selection.end.line - 1
+            : selection.end.line
+        let selectedLines = Array(_lines[startLine...endLine])
 
         // create variable
         let initArray = ViewInitGenerator.shared.generateInitArray(selectedLines: selectedLines)
