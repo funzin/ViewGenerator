@@ -16,11 +16,11 @@
   <a href="./LICENSE">
     <img src="https://img.shields.io/github/license/funzin/ViewGenerator" alt="License" />
   </a>
-  <a href="https://twitter.com/fufunzin">
-    <img src="https://img.shields.io/badge/twitter-@fufunzin-blue.svg" alt="License" />
-  </a>
   <a href=https://sonarcloud.io/dashboard?id=funzin_ViewGenerator> 
     <img src=https://sonarcloud.io/api/project_badges/measure?project=funzin_ViewGenerator&metric=alert_status />
+  </a>
+  <a href="https://twitter.com/fufunzin">
+    <img src="https://img.shields.io/badge/twitter-@fufunzin-blue.svg" alt="License" />
   </a>
 </p>
 
@@ -179,7 +179,6 @@ If you discover problem or have opinions, please let me know through Github issu
 ## Author
 funzin
 - mail: nakazawa.fumito@gmail.com
-- twitter: [fufunzin](https:twitter.com/fufunzin)
 
 ## License
 ViewGenerator is available under the MIT license. See the [LICENSE](./LICENSE) file for more info.
