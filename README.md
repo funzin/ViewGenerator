@@ -19,8 +19,8 @@
   <a href=https://sonarcloud.io/dashboard?id=funzin_ViewGenerator> 
     <img src=https://sonarcloud.io/api/project_badges/measure?project=funzin_ViewGenerator&metric=alert_status />
   </a>
-  <a href="https://twitter.com/fufunzin">
-    <img src="https://img.shields.io/badge/twitter-@fufunzin-blue.svg" alt="License" />
+  <a href="https://twitter.com/_funzin">
+    <img src="https://img.shields.io/badge/twitter-@_funzin-blue.svg" alt="License" />
   </a>
 </p>
 
