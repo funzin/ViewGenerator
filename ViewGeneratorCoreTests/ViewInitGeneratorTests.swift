@@ -11,10 +11,11 @@ import XCTest
 @testable import ViewGeneratorCore
 class ViewInitGeneratorTests: XCTestCase {
     var viewInitGenerator: ViewInitGenerator!
+    var mockUserDefaults: MockUserDefaults!
 
     override func setUp() {
-        viewInitGenerator = ViewInitGenerator.shared
-        UserDefaults.group.removeAll()
+        mockUserDefaults = MockUserDefaults()
+        viewInitGenerator = ViewInitGenerator(userDefaults: mockUserDefaults)
     }
 
     func testGenerate() {
@@ -82,7 +83,7 @@ class ViewInitGeneratorTests: XCTestCase {
             \n
             """
 
-        UserDefaults.group.set(selectedAccessModifier, forKey: UserDefaults.KeyList.accessModifier)
+        mockUserDefaults.set(selectedAccessModifier, forKey: UserDefaults.KeyList.accessModifier)
         XCTAssertEqual(viewInitGenerator.generate(startPosition: 0, variableName: variableName), initClosureText)
     }
 

@@ -11,7 +11,11 @@ import Foundation
 /// Name space to generate initializer closure text for view
 public struct ViewInitGenerator {
 
-    public static let shared = ViewInitGenerator()
+    private let userDefaults: UserDefaultsProtocol
+
+    public init(userDefaults: UserDefaultsProtocol) {
+        self.userDefaults = userDefaults
+    }
 
     /// Generate initializer closure text array
     ///
@@ -33,7 +37,7 @@ public struct ViewInitGenerator {
                 return []
             }
 
-            let initText = ViewInitGenerator.shared.generate(startPosition: startPosition, variableName: variableName)
+            let initText = generate(startPosition: startPosition, variableName: variableName)
             viewInitArray.append(initText)
         }
         return viewInitArray
@@ -63,7 +67,7 @@ extension ViewInitGenerator {
 
         // read selected accessModifier on app
         let accessModifier: AccessModifier
-        if let text = UserDefaults.group.get(forKey: UserDefaults.KeyList.accessModifier),
+        if let text = userDefaults.get(forKey: UserDefaults.KeyList.accessModifier),
             let _accessModifier = AccessModifier(rawValue: text) {
             accessModifier = _accessModifier
         } else {

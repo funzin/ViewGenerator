@@ -36,7 +36,8 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
         let selectedLines = Array(_lines[startLine...endLine])
 
         // create variable
-        let initArray = ViewInitGenerator.shared.generateInitArray(selectedLines: selectedLines)
+        let viewInitGenerator = ViewInitGenerator(userDefaults: UserDefaults.group)
+        let initArray = viewInitGenerator.generateInitArray(selectedLines: selectedLines)
         guard !initArray.isEmpty else {
             completionHandler(NSError(domain: Const.domain, code: 402, userInfo: ["reason": "selected lines are not converted"]))
             return

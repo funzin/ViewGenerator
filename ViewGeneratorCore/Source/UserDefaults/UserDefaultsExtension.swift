@@ -1,5 +1,5 @@
 //
-//  UserDefaults+Extension.swift
+//  UserDefaultsExtension.swift
 //  ViewGeneratorApp
 //
 //  Created by funzin on 2019/08/05.
@@ -9,14 +9,10 @@
 import Foundation
 
 extension UserDefaults {
-    public enum KeyList {
-        public static let accessModifier = Key<String>(name: "accessModifier")
-    }
+    public static let group: UserDefaults = UserDefaults(suiteName: "E5RDJ83DDA.com.funzin.ViewGeneratorApp")!
 }
 
-extension UserDefaults {
-    public static let group: UserDefaults! = UserDefaults(suiteName: "E5RDJ83DDA.com.funzin.ViewGeneratorApp")
-
+extension UserDefaults: UserDefaultsProtocol {
     public func set<ValueType>(_ value: ValueType, forKey key: Key<ValueType>) {
         set(value, forKey: key.name)
     }
@@ -28,13 +24,5 @@ extension UserDefaults {
     public func removeAll() {
         let dictionary = dictionaryRepresentation()
         dictionary.keys.forEach { key in removeObject(forKey: key) }
-    }
-}
-
-public struct Key<ValueType> {
-    let name: String
-
-    init(name: String) {
-        self.name = name
     }
 }
