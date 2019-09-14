@@ -19,13 +19,15 @@
 		316FC5472307B108003E1DD3 /* ViewGeneratorCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 316FC5372307B107003E1DD3 /* ViewGeneratorCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		316FC54A2307B108003E1DD3 /* ViewGeneratorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316FC5352307B107003E1DD3 /* ViewGeneratorCore.framework */; };
 		316FC54B2307B108003E1DD3 /* ViewGeneratorCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 316FC5352307B107003E1DD3 /* ViewGeneratorCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		316FC5532307B115003E1DD3 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B823822F874FC00141017 /* UserDefaults+Extension.swift */; };
+		316FC5532307B115003E1DD3 /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B823822F874FC00141017 /* UserDefaultsExtension.swift */; };
 		316FC5542307B118003E1DD3 /* AccessModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B823622F8746E00141017 /* AccessModifier.swift */; };
 		316FC5552307B11C003E1DD3 /* UIParts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122908922F6BEB50054CA7B /* UIParts.swift */; };
 		316FC5562307B11E003E1DD3 /* ViewInitGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310C229322FFC1280030A633 /* ViewInitGenerator.swift */; };
 		316FC5582307B13E003E1DD3 /* UIPartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3122ABCD22F6CE6C00BC0792 /* UIPartsTests.swift */; };
 		316FC5592307B13E003E1DD3 /* ViewInitGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C90DCB22FFC7FB0019D0C8 /* ViewInitGeneratorTests.swift */; };
 		316FC55A2307B13E003E1DD3 /* AccessModifierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3123DE0A22FFC3400048347F /* AccessModifierTests.swift */; };
+		31A395A9232D1FC3009328E8 /* UserDefaultsKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A395A8232D1FC3009328E8 /* UserDefaultsKey.swift */; };
+		31A395AB232D21E4009328E8 /* UserDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31A395AA232D21E4009328E8 /* UserDefaultsProtocol.swift */; };
 		99B62F65FDC2AA95C8C4F7A9 /* Pods_ViewGeneratorApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932965A902408EE65B329054 /* Pods_ViewGeneratorApp.framework */; };
 		AEA88FB589EDD54027B1F17C /* Pods_ViewGenerator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93163BF94A3947D838C4613B /* Pods_ViewGenerator.framework */; };
 		C7F84FAE63AD392C461D9BCD /* Pods_ViewGeneratorCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20F34B4B2DF924518900CF04 /* Pods_ViewGeneratorCore.framework */; };
@@ -91,7 +93,7 @@
 		20F34B4B2DF924518900CF04 /* Pods_ViewGeneratorCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewGeneratorCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21CC8B85B19D3E94C6519984 /* Pods-ViewGeneratorCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewGeneratorCore.release.xcconfig"; path = "Target Support Files/Pods-ViewGeneratorCore/Pods-ViewGeneratorCore.release.xcconfig"; sourceTree = "<group>"; };
 		310B823622F8746E00141017 /* AccessModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessModifier.swift; sourceTree = "<group>"; };
-		310B823822F874FC00141017 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		310B823822F874FC00141017 /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
 		310C229322FFC1280030A633 /* ViewInitGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInitGenerator.swift; sourceTree = "<group>"; };
 		3122906022F6BE830054CA7B /* ViewGeneratorForXcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViewGeneratorForXcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3122906322F6BE830054CA7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,8 @@
 		316FC5382307B107003E1DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		316FC53D2307B107003E1DD3 /* ViewGeneratorCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewGeneratorCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		316FC5462307B108003E1DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31A395A8232D1FC3009328E8 /* UserDefaultsKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKey.swift; sourceTree = "<group>"; };
+		31A395AA232D21E4009328E8 /* UserDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsProtocol.swift; sourceTree = "<group>"; };
 		31C90DCB22FFC7FB0019D0C8 /* ViewInitGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInitGeneratorTests.swift; sourceTree = "<group>"; };
 		49AA12573FC86EDFA9BDF065 /* Pods-ViewGeneratorCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewGeneratorCore.debug.xcconfig"; path = "Target Support Files/Pods-ViewGeneratorCore/Pods-ViewGeneratorCore.debug.xcconfig"; sourceTree = "<group>"; };
 		93163BF94A3947D838C4613B /* Pods_ViewGenerator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewGenerator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -290,12 +294,22 @@
 		316FC5572307B12D003E1DD3 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				31A395A7232D1FA7009328E8 /* UserDefaults */,
 				310C229322FFC1280030A633 /* ViewInitGenerator.swift */,
 				3122908922F6BEB50054CA7B /* UIParts.swift */,
 				310B823622F8746E00141017 /* AccessModifier.swift */,
-				310B823822F874FC00141017 /* UserDefaults+Extension.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		31A395A7232D1FA7009328E8 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				310B823822F874FC00141017 /* UserDefaultsExtension.swift */,
+				31A395A8232D1FC3009328E8 /* UserDefaultsKey.swift */,
+				31A395AA232D21E4009328E8 /* UserDefaultsProtocol.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -646,8 +660,10 @@
 			files = (
 				316FC5542307B118003E1DD3 /* AccessModifier.swift in Sources */,
 				316FC5552307B11C003E1DD3 /* UIParts.swift in Sources */,
-				316FC5532307B115003E1DD3 /* UserDefaults+Extension.swift in Sources */,
+				316FC5532307B115003E1DD3 /* UserDefaultsExtension.swift in Sources */,
 				316FC5562307B11E003E1DD3 /* ViewInitGenerator.swift in Sources */,
+				31A395AB232D21E4009328E8 /* UserDefaultsProtocol.swift in Sources */,
+				31A395A9232D1FC3009328E8 /* UserDefaultsKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
