@@ -36,9 +36,9 @@ public enum UIParts: String, CaseIterable {
     case none = "_InputTypeName_"
 
     init(variableName: String) {
-        let lowercasedvariableName = variableName.lowercased()
+        let lowercasedVariableName = variableName.lowercased()
         let target = UIParts.ascendingSorted
-            .filter { lowercasedvariableName.contains($0.rawValue.lowercased()) }
+            .filter { lowercasedVariableName.contains($0.rawValue.lowercased()) }
             .first
 
         self = target ?? .none
