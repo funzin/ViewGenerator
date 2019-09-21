@@ -38,7 +38,7 @@ public enum UIParts: String, CaseIterable {
     init(variableName: String) {
         let lowercasedVariableName = variableName.lowercased()
         let target = UIParts.ascendingSorted
-            .filter { lowercasedVariableName.hasPrefix($0.rawValue.lowercased()) }
+            .filter { lowercasedVariableName.hasSuffix($0.rawValue.lowercased()) }
             .first
 
         self = target ?? .none
