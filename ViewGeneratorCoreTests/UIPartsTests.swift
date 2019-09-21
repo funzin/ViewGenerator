@@ -40,8 +40,8 @@ class UIPartsTests: XCTestCase {
     }
 
     func testInitWithvariableNameWhenLowerCase() {
-        variableNameArray = ["hogeimageview", "hogetableview", "hogecollectionview", "hogeview", "hoge"]
-        let uiPartsArray: [UIParts] = [.imageView, .tableView, .collectionView, .view, .none]
+        variableNameArray = ["hogeimageview", "hogetableview", "hogecollectionview", "hogeview", "hoge", "hogeButtonContainerView"]
+        let uiPartsArray: [UIParts] = [.imageView, .tableView, .collectionView, .view, .none, .view]
 
         for (variableName, type) in zip(variableNameArray, uiPartsArray) {
             let uiParts = UIParts(variableName: variableName)
